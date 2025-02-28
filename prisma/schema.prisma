@@ -33,8 +33,7 @@ model Report {
   title       String   @db.VarChar(255)
   description String   @db.Text
   category    Category
-  imageUrl    String?  @db.VarChar(255) // Opsional
-  priority    Priority @default(MEDIUM)
+  priority    Priority 
   status      Status   @default(PENDING)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
